@@ -18,11 +18,15 @@
   },
   "homepage": "https://github.com/aindrajaya/cypress-react-example#readme",
   "devDependencies": {
+    "@cypress/instrument-cra": "^1.4.0",
     "cypress": "4.6.0",
     "cypress-react-unit-test": "4.2.3",
     "react-scripts": "3.4.1"
   },
   "dependencies": {
+    "@cypress/code-coverage": "^3.8.2",
+    "istanbul-lib-coverage": "^3.0.0",
+    "nyc": "^15.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }

@@ -4,3 +4,7 @@ module.exports = (on, config) => {
   // with the any changed environment variables
   return config
 }
+
+module.exports = (on, config) => {
+  on('task', require('@cypress/code-coverage/task'))
+}
