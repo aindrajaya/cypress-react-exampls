@@ -3,7 +3,7 @@ import React from 'react'
 import { mount } from 'cypress-react-unit-test'
 
 function Button(props) {
-  return <button>Nothing to do for now</button>;
+  return <button>Masih Gak ada apa apa</button>;
 }
 
 describe("Button component", () => {

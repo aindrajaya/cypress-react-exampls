@@ -32,7 +32,7 @@ export default class Users extends Component {
 
 describe("User component", () => {
   it("it shows a list of users", () => {
-    const fakeResponse = [{ name: "John Doe" }, { name: "Kevin Mitnick" }];
+    const fakeResponse = [{ name: "Suryodiningrat" }, { name: "Ivan the Teribble" }];
 
     cy.stub(window, 'fetch').resolves({
       json: () => Promise.resolve(fakeResponse)
@@ -40,7 +40,7 @@ describe("User component", () => {
 
     mount(<Users />)
     cy.get('li').should('have.length', 2)
-    cy.contains('li', 'John Doe')
-    cy.contains('li', 'Kevin Mitnick')
+    cy.contains('li', 'Suryodiningrat')
+    cy.contains('li', 'Ivan the Teribble')
   });
 });

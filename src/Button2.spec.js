@@ -10,7 +10,7 @@ class Button extends React.Component {
 
   handleClick() {
     this.setState(() => {
-      return { text: "PROCEED TO CHECKOUT" };
+      return { text: "MULAI ADA APA APA KAN" };
     });
   }
 
@@ -28,6 +28,6 @@ describe("Button component", () => {
     mount(<Button text="SUBSCRIBE TO BASIC" />);
     cy.contains('SUBSCRIBE TO BASIC')
       .click()
-      .should('have.text', 'PROCEED TO CHECKOUT')
+      .should('have.text', 'MULAI ADA APA APA KAN')
   });
 });

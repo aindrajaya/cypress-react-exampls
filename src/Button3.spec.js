@@ -4,7 +4,7 @@ import { mount } from "cypress-react-unit-test";
 function Button(props) {
   const [text, setText] = useState("");
   function handleClick() {
-    setText("PROCEED TO CHECKOUT");
+    setText("INI JUGA MULAI ADA APA APA");
   }
   return <button onClick={handleClick}>{text || props.text}</button>;
 }
@@ -14,6 +14,6 @@ describe("Button component", () => {
     mount(<Button text="SUBSCRIBE TO BASIC" />);
     cy.contains('SUBSCRIBE TO BASIC')
       .click()
-      .should('have.text', 'PROCEED TO CHECKOUT')
+      .should('have.text', 'INI JUGA MULAI ADA APA APA')
   });
 });
